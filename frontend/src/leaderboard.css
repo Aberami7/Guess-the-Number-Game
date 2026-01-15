@@ -1,0 +1,129 @@
+/* 🌌 Page base */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url("bg.png") no-repeat center center fixed;
+  background-size: cover;
+  color: rgb(178, 13, 156);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 🧊 Main container */
+.leaderboard-container {
+  position: relative;                /* 🔥 important for back arrow */
+  width: 900px;
+  max-width: 400%;
+  padding: 35px 30px 30px;
+  background: rgba(154, 29, 125, 0.22); /* pink glass */
+  border-radius: 22px;
+  box-shadow: 0 0 28px rgba(233, 77, 220, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* ⬅️ Back Arrow Button */
+.back-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  color: #7a0fa1;
+  font-size: 20px;
+  cursor: pointer;
+
+  box-shadow: 0 0 12px rgba(181, 34, 235, 0.45);
+  transition: all 0.25s ease;
+  z-index: 10;
+}
+
+.back-btn:hover {
+  transform: scale(1.15);
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* 🏆 Title */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #8c1fb3;
+  text-shadow: 0 0 10px rgba(216, 124, 186, 0.96);
+}
+
+/* 📊 Table layout */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 16px; /* 🔥 gap between rows */
+}
+
+/* Header */
+thead th {
+  padding-bottom: 12px;
+  color: #900997;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 🔥 Each row = glass box */
+tbody tr {
+  background: rgba(255, 182, 230, 0.18);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 14px rgba(178, 18, 122, 0.4);
+  border-radius: 18px;
+  transition: transform 0.2s ease;
+}
+
+/* Round corners */
+tbody tr td:first-child {
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+tbody tr td:last-child {
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+/* Cell style */
+td {
+  padding: 15px;
+  text-align: center;
+  color: #5a0b78;
+  font-weight: 500;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  transform: scale(1.025);
+}
+
+/* 📱 Mobile responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  td {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

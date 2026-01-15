@@ -1,0 +1,195 @@
+/* 🌌 Page base */
+body {
+  margin: 0;
+font-family: 'Roboto', sans-serif;
+
+  background: url('bg.png') no-repeat center center fixed;
+  background-size: cover;
+  color: rgb(178, 13, 156);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 🧊 Main container */
+.container {
+  position: relative; /* 🔥 back button ku important */
+  width: 550px;
+  max-width: 90%;
+  padding: 40px;
+  background: rgba(255, 182, 193, 0.2);
+
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(87, 77, 78, 0.4);
+  border: 1px solid rgba(219, 209, 210, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}  
+.h-container {
+  position: relative; /* 🔥 back button ku important */
+  width: 700px;
+  max-width: 90%;
+  padding: 60px 40px;
+  background: rgba(255, 182, 193, 0.2);
+
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(87, 77, 78, 0.4);
+  border: 1px solid rgba(219, 209, 210, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* ✍️ Inputs & Buttons */
+input,
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* 🧾 Input */
+input {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #a63be4;
+  color: #4b0082;
+}
+
+/* 🔘 Normal Buttons */
+button {
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(172, 104, 228, 0.8);
+  color: #6c0d81;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: rgba(172, 104, 228, 1);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0px);
+}
+
+/* ⬅️ BACK BUTTON (Container kulla) */
+.back-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  color: #7a0fa1;
+  font-size: 18px;
+  cursor: pointer;
+
+  box-shadow: 0 0 12px rgba(213, 18, 168, 0.45);
+  transition: all 0.25s ease;
+}
+
+.back-button:hover {
+  transform: scale(1.15);
+  background: rgba(255, 255, 255, 0.35);
+}
+.status-row {
+  display: flex;               /* horizontal layout */
+  flex-direction: row;         /* ensure it's row */
+  justify-content: center;     /* center in container */
+  align-items: center;         /* vertical align items */
+  gap: 30px;                   /* space between Attempts & Timer */
+  margin-top: 15px;
+ 
+  color: #6c0d81;
+  font-size: 16px;
+}
+
+.timer {
+  color: #6c0d81;
+}
+
+/* 🎉 Confetti */
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.confetti-piece {
+  position: absolute;
+  top: -20px;
+  width: 10px;
+  height: 18px;
+  border-radius: 2px;
+  opacity: 0.9;
+  animation-name: paperFall;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+/* Player name title */
+.player-title {
+ 
+  color: #81119d; /* bright pink-purple for dark background */
+  text-shadow: 0 0 8px rgba(186, 147, 192, 0.8); /* glow effect */
+  font-size: 25px;
+   font-weight: light; 
+  text-align: center;
+  margin-bottom: 15px;
+}
+.hint {
+  font-weight: bold;      /* like Player: Abe */
+  font-size: 18px;        /* readable */
+  text-align: center;     /* center align */
+  color: #b81a54;         /* your theme pink color */
+  text-shadow: 0 0 6px rgba(233, 30, 99, 0.7);
+  margin-top: 15px;       /* spacing from buttons */
+}
+
+
+@keyframes paperFall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+  }
+}
