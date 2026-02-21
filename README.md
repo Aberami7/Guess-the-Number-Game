@@ -9,21 +9,11 @@ This project demonstrates frontend-backend integration, state management, API ha
 
 🚀 Tech Stack
 
-Frontend
+Frontend-React (Vite),CSS,JavaScript
 
-React (Vite)
+Backend-Java (REST API)
 
-CSS
-
-JavaScript (ES6)
-
-Backend
-
-Java (REST API)
-
-Database
-
-SQL (Leaderboard storage)
+Database-SQL (Leaderboard storage)
 
 ✨ Core Features
 
@@ -51,72 +41,63 @@ SQL (Leaderboard storage)
 
 The leaderboard ranks players based on:
 
-Higher score
+ -Higher score
 
-Faster completion time
+-Faster completion time
 
-Fewer attempts
+-Fewer attempts
+
+-The leaderboard data is fetched dynamically from the backend API and rendered using React.
 
 Stored Data:
 
-Username
+-Username
 
-Attempts
+-Attempts
 
-Time taken (seconds)
+-Time taken (seconds)
 
-Score
+-Score
 
-Timestamp
-
-Example SQL Logic:
-ORDER BY score DESC, time_taken ASC, attempts ASC;
-
-The leaderboard data is fetched dynamically from the backend API and rendered using React.
+-Timestamp
 
 ⏳ Timer Logic
 
-Countdown starts when the game begins.
-
-User must guess the number within 60 seconds.
-
-If time reaches 0:
-
-Game ends automatically
-
-Timeout sound plays
-
-Score is recorded
+Countdown starts when the game begins--> User must guess the number within 60 seconds--> If time reaches 0: Game ends automatically--> Timeout sound plays--> Score is recorded
 
 🔊 Sound & Animation
 
-Correct guess sound effect
+-Correct guess sound effect
 
-Wrong guess sound effect
+-Wrong guess sound effect
 
-Timeout alert sound
+-Timeout alert sound
 
-Confetti animation triggered upon successful guess
+-Confetti animation triggered upon successful guess
 
 🏗 System Architecture
 
 Frontend (React + Vite)
-     ⬇
+     ➡️
 Backend (Java REST API)
-     ⬇
+     ➡️
 SQL Database
 
 Flow:
 
 User enters name
-
+     ➡️
 Game starts (timer initialized)
-
+     ➡️
 User submits guess
 
 Backend validates guess
 
 Result returned to frontend
+
+Score stored in database
+
+Leaderboard updated dynamically
 
 <img width="1920" height="1020" alt="Screenshot 2026-01-15 113124" src="https://github.com/user-attachments/assets/259f9e05-39dc-49f9-b97b-8302ecfecb6e" />
 
@@ -140,6 +121,3 @@ Result returned to frontend
 
 
 
-Score stored in database
-
-Leaderboard updated dynamically
