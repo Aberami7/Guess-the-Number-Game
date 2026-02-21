@@ -9,7 +9,7 @@ This project demonstrates frontend-backend integration, state management, API ha
 
 🚀 Tech Stack 🚀
 
-Frontend - React (Vite),CSS,JavaScript
+Frontend - React (Vite),Html,CSS,JavaScript
 
 Backend - Java (REST API)
 
