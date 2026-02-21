@@ -1,5 +1,5 @@
                                          🎯 Guess The Number – Full Stack Web Game
-📌 Project Overview
+📌 Project Overview 📌
 
 Guess The Number is a full-stack interactive web application where users attempt to guess a randomly generated number within a limited time.
 
@@ -7,15 +7,15 @@ The application includes a real-time countdown timer, sound effects, leaderboard
 
 This project demonstrates frontend-backend integration, state management, API handling, database operations, and game logic implementation.
 
-🚀 Tech Stack
+🚀 Tech Stack 🚀
 
-Frontend-React (Vite),CSS,JavaScript
+Frontend - React (Vite),CSS,JavaScript
 
-Backend-Java (REST API)
+Backend - Java (REST API)
 
-Database-SQL (Leaderboard storage)
+Database - SQL (Leaderboard storage)
 
-✨ Core Features
+✨ Core Features ✨
 
 🎮 Interactive number guessing game
 
@@ -61,11 +61,11 @@ Stored Data:
 
 -Timestamp
 
-⏳ Timer Logic
+⏳ Timer Logic ⏳
 
-Countdown starts when the game begins--> User must guess the number within 60 seconds--> If time reaches 0: Game ends automatically--> Timeout sound plays--> Score is recorded
+Countdown starts when the game begins --> User must guess the number within 60 seconds --> If time reaches 0: Game ends automatically --> Timeout sound plays --> Score is recorded
 
-🔊 Sound & Animation
+🔊 Sound & Animation🔊
 
 -Correct guess sound effect
 
@@ -75,7 +75,7 @@ Countdown starts when the game begins--> User must guess the number within 60 se
 
 -Confetti animation triggered upon successful guess
 
-🏗 System Architecture
+🏗 System Architecture 🏗
 
 Frontend (React + Vite)
      ➡️
@@ -90,13 +90,13 @@ User enters name
 Game starts (timer initialized)
      ➡️
 User submits guess
-
+     ➡️
 Backend validates guess
-
+     ➡️
 Result returned to frontend
-
+     ➡️
 Score stored in database
-
+     ➡️
 Leaderboard updated dynamically
 
 <img width="1920" height="1020" alt="Screenshot 2026-01-15 113124" src="https://github.com/user-attachments/assets/259f9e05-39dc-49f9-b97b-8302ecfecb6e" />
