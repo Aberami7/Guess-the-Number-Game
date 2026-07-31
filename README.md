@@ -248,7 +248,6 @@ Guess-The-Number
 
 ---
 
-<div align="center">
 
 # 🌟 Future Enhancements
 
@@ -264,7 +263,6 @@ Guess-The-Number
 
 🔐 User Authentication
 
-</div>
 
 ---
 
