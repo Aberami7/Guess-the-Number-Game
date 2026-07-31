@@ -1,123 +1,199 @@
-                                         🎯 Guess The Number – Full Stack Web Game
-📌 Project Overview 📌
+# 🎯 Guess The Number
+### A Full-Stack Interactive Number Guessing Web Game
 
-Guess The Number is a full-stack interactive web application where users attempt to guess a randomly generated number within a limited time.
+> Test your intuition, race against time, and compete for the top spot on the leaderboard!
 
-The application includes a real-time countdown timer, sound effects, leaderboard ranking system, and persistent score storage using a SQL database.
+---
 
-This project demonstrates frontend-backend integration, state management, API handling, database operations, and game logic implementation.
+## 📖 Overview
 
-🚀 Tech Stack 🚀
+**Guess The Number** is a full-stack web application that challenges players to identify a randomly generated number before the countdown reaches zero.
 
-Frontend - React (Vite),Html,CSS,JavaScript
+The project combines an engaging gaming experience with modern web technologies, featuring real-time gameplay, persistent score tracking, dynamic leaderboards, and seamless frontend-backend communication.
 
-Backend - Java (REST API)
+It demonstrates practical implementation of:
 
-Database - SQL (Leaderboard storage)
+- ⚛️ Full Stack Development
+- 🔄 REST API Integration
+- 🗄️ SQL Database Operations
+- ⏱️ Real-Time State Management
+- 🎮 Interactive Game Logic
+- 📱 Responsive UI Design
 
-✨ Core Features ✨
+---
 
-🎮 Interactive number guessing game
+# 🚀 Tech Stack
 
-⏱ 60-second countdown timer
+| Category | Technology |
+|----------|------------|
+| 🎨 Frontend | React (Vite), HTML5, CSS3, JavaScript |
+| ⚙️ Backend | Java REST API |
+| 🗄️ Database | SQL |
+| 🔗 Communication | REST API |
 
-🔊 Sound effects (Correct / Wrong / Timeout)
+---
 
-🎉 Confetti animation on success
+# ✨ Features
 
-📊 Attempt counter
+✅ Interactive Number Guessing Gameplay
 
-🏆 Dynamic leaderboard
+⏳ 60-Second Real-Time Countdown
 
-💾 Persistent score storage in SQL
+🏆 Dynamic Live Leaderboard
 
-🔄 Restart / Play Again functionality
+💾 Persistent SQL Score Storage
 
-✅ Username validation before starting game
+🎯 Attempt Tracking
 
-📱 Responsive user interface
+🔊 Audio Feedback
 
-🏆 Leaderboard System
+🎉 Confetti Celebration
 
-The leaderboard ranks players based on:
+👤 Username Validation
 
- -Higher score
+🔄 Play Again / Restart Option
 
--Faster completion time
+📱 Fully Responsive Design
 
--Fewer attempts
+---
 
--The leaderboard data is fetched dynamically from the backend API and rendered using React.
+# 🎮 Gameplay Flow
 
-Stored Data:
+```text
+Enter Username
+      │
+      ▼
+Generate Random Number
+      │
+      ▼
+60-Second Timer Starts
+      │
+      ▼
+Player Makes Guesses
+      │
+      ▼
+Backend Validates Guess
+      │
+      ▼
+Correct? ── Yes ──► Save Score ► Update Leaderboard 🎉
+      │
+      No
+      │
+      ▼
+Continue Until Time Ends
+```
 
--Username
+---
 
--Attempts
+# 🏆 Leaderboard Ranking
 
--Time taken (seconds)
+Players are ranked intelligently based on:
 
--Score
+🥇 Highest Score
 
--Timestamp
+⚡ Fastest Completion Time
 
-⏳ Timer Logic ⏳
+🎯 Fewest Attempts
 
-Countdown starts when the game begins --> User must guess the number within 60 seconds --> If time reaches 0: Game ends automatically --> Timeout sound plays --> Score is recorded
+The leaderboard updates automatically after every completed game.
 
-🔊 Sound & Animation🔊
+### Stored Information
 
--Correct guess sound effect
+- Username
+- Score
+- Attempts
+- Time Taken
+- Timestamp
 
--Wrong guess sound effect
+---
 
--Timeout alert sound
+# ⏱ Timer Mechanism
 
--Confetti animation triggered upon successful guess
+```text
+Game Starts
+      │
+      ▼
+60s Countdown Begins
+      │
+      ▼
+Player Keeps Guessing
+      │
+      ├──────── Correct Guess
+      │               │
+      │               ▼
+      │          Save Score
+      │
+      ▼
+Time Reaches Zero
+      │
+      ▼
+Game Ends Automatically
+```
 
-🏗 System Architecture 🏗
+---
 
-Frontend (React + Vite)
-     ➡️
-Backend (Java REST API)
-     ➡️
-SQL Database
+# 🔊 Sound & Visual Effects
 
-Flow:
+- ✅ Correct Guess Sound
+- ❌ Wrong Guess Sound
+- ⏰ Timeout Alert
+- 🎉 Confetti Celebration Animation
 
-User enters name
-     ➡️
-Game starts (timer initialized)
-     ➡️
-User submits guess
-     ➡️
-Backend validates guess
-     ➡️
-Result returned to frontend
-     ➡️
-Score stored in database
-     ➡️
-Leaderboard updated dynamically
+---
 
-<img width="1920" height="1020" alt="Screenshot 2026-01-15 113124" src="https://github.com/user-attachments/assets/259f9e05-39dc-49f9-b97b-8302ecfecb6e" />
+# 🏗 System Architecture
 
-<img width="1920" height="1020" alt="Screenshot 2026-01-15 113051" src="https://github.com/user-attachments/assets/e6d08bfb-2474-4c73-ad98-216becb649cc" />
+```text
+┌──────────────────────┐
+│   React Frontend     │
+└──────────┬───────────┘
+           │ REST API
+           ▼
+┌──────────────────────┐
+│   Java Backend API   │
+└──────────┬───────────┘
+           │ SQL Queries
+           ▼
+┌──────────────────────┐
+│    SQL Database      │
+└──────────────────────┘
+```
 
-<img width="1920" height="1020" alt="Screenshot 2026-02-21 164638" src="https://github.com/user-attachments/assets/9223c250-5d3e-42f0-9d83-c462ef271304" />
+---
 
+# 📸 Application Preview
 
+## 🎮 Game Interface
 
+<img width="1920" height="1020" alt="Game Screen" src="https://github.com/user-attachments/assets/259f9e05-39dc-49f9-b97b-8302ecfecb6e"/>
 
+---
 
+## 🏆 Leaderboard
 
+<img width="1920" height="1020" alt="Leaderboard" src="https://github.com/user-attachments/assets/e6d08bfb-2474-4c73-ad98-216becb649cc"/>
 
+---
 
+## 🎉 Winning Screen
 
+<img width="1920" height="1020" alt="Winning Screen" src="https://github.com/user-attachments/assets/9223c250-5d3e-42f0-9d83-c462ef271304"/>
 
+---
 
+# 💡 Learning Outcomes
 
+This project strengthened my understanding of:
 
+- Full Stack Application Development
+- RESTful API Design
+- React State Management
+- SQL Database Integration
+- Backend Validation Logic
+- Responsive UI Development
+- Real-Time Timer Implementation
+- Interactive Web Game Design
 
+---
 
-
-
+## ⭐ If you found this project interesting, consider giving it a Star!
