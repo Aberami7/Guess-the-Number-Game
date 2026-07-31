@@ -1,8 +1,16 @@
 <div align="center">
 
+<table>
+<tr>
+<td width="15%" align="center"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnVlYnhoemZ6dG9pd3NucTZsYWJxc3F5NHN4Z3RvYjl0bWUwazl5ZSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/FJaKqj9YG8cw6FeW8b/giphy.gif" width="100"></td>
+<td width="70%" align="center">
+
 # 🎮 Guess The Number
 
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnVlYnhoemZ6dG9pd3NucTZsYWJxc3F5NHN4Z3RvYjl0bWUwazl5ZSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/FJaKqj9YG8cw6FeW8b/giphy.gif" width="250">
+</td>
+<td width="15%" align="center"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnVlYnhoemZ6dG9pd3NucTZsYWJxc3F5NHN4Z3RvYjl0bWUwazl5ZSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/FJaKqj9YG8cw6FeW8b/giphy.gif" width="100"></td>
+</tr>
+</table>
 
 A full-stack number guessing web game built with **React**, a **Java REST API**, and **SQL**. Players race against a 60-second timer to guess a randomly generated secret number, with real-time feedback, sound effects, and a persistent leaderboard.
 
