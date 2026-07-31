@@ -4,10 +4,10 @@
 
 A full-stack number guessing web game built with **React**, a **Java REST API**, and **SQL**. Players race against a 60-second timer to guess a randomly generated secret number, with real-time feedback, sound effects, and a persistent leaderboard.
 
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-<img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
-<img src="https://img.shields.io/badge/REST_API-6DB33F?style=flat-square&logo=fastapi&logoColor=white" />
-<img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+<img src="https://img.shields.io/badge/REST_API-6DB33F?style=for-the-badge&logo=fastapi&logoColor=white" />
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 
 </div>
 
