@@ -1,93 +1,106 @@
-# 🎯 Guess The Number
-### A Full-Stack Interactive Number Guessing Web Game
+<div align="center">
 
-> Test your intuition, race against time, and compete for the top spot on the leaderboard!
+# 🎮 Guess The Number
+
+### ⏳ Beat the Clock • 🎯 Guess Smart • 🏆 Reach the Top
+
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/REST_API-009688?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Responsive-4CAF50?style=for-the-badge"/>
 
 ---
 
-## 📖 Overview
+### 🎯 Can you discover the secret number before the countdown reaches zero?
 
-**Guess The Number** is a full-stack web application that challenges players to identify a randomly generated number before the countdown reaches zero.
+An engaging **Full Stack Number Guessing Web Game** built with **React, Java REST API, and SQL**, featuring real-time gameplay, dynamic leaderboards, sound effects, and persistent score tracking.
 
-The project combines an engaging gaming experience with modern web technologies, featuring real-time gameplay, persistent score tracking, dynamic leaderboards, and seamless frontend-backend communication.
+</div>
 
-It demonstrates practical implementation of:
+---
 
-- ⚛️ Full Stack Development
-- 🔄 REST API Integration
-- 🗄️ SQL Database Operations
-- ⏱️ Real-Time State Management
-- 🎮 Interactive Game Logic
-- 📱 Responsive UI Design
+# 🎮 Game Highlights
+
+| 🎯 Challenge | ⏳ Timer | 🏆 Competition |
+|--------------|----------|----------------|
+| Guess the hidden number | 60-Second Countdown | Beat the Leaderboard |
+
+| 🔊 Audio | 💾 Database | 📱 UI |
+|----------|-------------|-------|
+| Correct • Wrong • Timeout | SQL Score Storage | Responsive Design |
 
 ---
 
 # 🚀 Tech Stack
 
-| Category | Technology |
-|----------|------------|
+| Layer | Technology |
+|-------|------------|
 | 🎨 Frontend | React (Vite), HTML5, CSS3, JavaScript |
-| ⚙️ Backend | Java REST API |
-| 🗄️ Database | SQL |
+| ⚙ Backend | Java REST API |
+| 🗄 Database | SQL |
 | 🔗 Communication | REST API |
 
 ---
 
 # ✨ Features
 
-✅ Interactive Number Guessing Gameplay
-
-⏳ 60-Second Real-Time Countdown
-
-🏆 Dynamic Live Leaderboard
-
-💾 Persistent SQL Score Storage
-
-🎯 Attempt Tracking
-
-🔊 Audio Feedback
-
-🎉 Confetti Celebration
-
-👤 Username Validation
-
-🔄 Play Again / Restart Option
-
-📱 Fully Responsive Design
+- 🎮 Interactive Number Guessing Game
+- ⏱️ 60-Second Countdown Timer
+- 🏆 Dynamic Leaderboard
+- 💾 SQL Persistent Score Storage
+- 👤 Username Validation
+- 🎯 Attempt Counter
+- 🔊 Sound Effects
+- 🎉 Confetti Celebration
+- 🔄 Restart / Play Again
+- 📱 Fully Responsive Interface
 
 ---
 
-# 🎮 Gameplay Flow
+# 🎲 How to Play
 
 ```text
-Enter Username
-      │
-      ▼
-Generate Random Number
-      │
-      ▼
-60-Second Timer Starts
-      │
-      ▼
-Player Makes Guesses
-      │
-      ▼
-Backend Validates Guess
-      │
-      ▼
-Correct? ── Yes ──► Save Score ► Update Leaderboard 🎉
-      │
-      No
-      │
-      ▼
-Continue Until Time Ends
+1️⃣ Enter your Username
+
+        │
+        ▼
+
+2️⃣ A Secret Number is Generated
+
+        │
+        ▼
+
+3️⃣ 60-Second Timer Starts
+
+        │
+        ▼
+
+4️⃣ Keep Guessing
+
+        │
+        ▼
+
+Too High? 🔺
+Too Low? 🔻
+Correct? ✅
+
+        │
+        ▼
+
+5️⃣ Score Saved
+
+        │
+        ▼
+
+6️⃣ Leaderboard Updated
 ```
 
 ---
 
 # 🏆 Leaderboard Ranking
 
-Players are ranked intelligently based on:
+The leaderboard automatically ranks players based on:
 
 🥇 Highest Score
 
@@ -95,7 +108,7 @@ Players are ranked intelligently based on:
 
 🎯 Fewest Attempts
 
-The leaderboard updates automatically after every completed game.
+Every completed game is permanently stored in the SQL database.
 
 ### Stored Information
 
@@ -107,93 +120,154 @@ The leaderboard updates automatically after every completed game.
 
 ---
 
-# ⏱ Timer Mechanism
+# ⏳ Timer Logic
 
 ```text
 Game Starts
       │
       ▼
-60s Countdown Begins
+60 Seconds Begin
       │
       ▼
-Player Keeps Guessing
+Player Makes Guesses
       │
-      ├──────── Correct Guess
-      │               │
-      │               ▼
-      │          Save Score
-      │
-      ▼
-Time Reaches Zero
+      ├────────► Correct Guess
+      │                 │
+      │                 ▼
+      │            Save Score
       │
       ▼
-Game Ends Automatically
+Timer Reaches Zero
+      │
+      ▼
+Game Over
 ```
 
 ---
 
-# 🔊 Sound & Visual Effects
+# 🔊 Sound & Animation
 
-- ✅ Correct Guess Sound
-- ❌ Wrong Guess Sound
-- ⏰ Timeout Alert
-- 🎉 Confetti Celebration Animation
+✅ Correct Guess Sound
+
+❌ Wrong Guess Sound
+
+⏰ Timeout Alert
+
+🎉 Confetti Celebration
 
 ---
 
 # 🏗 System Architecture
 
 ```text
-┌──────────────────────┐
-│   React Frontend     │
-└──────────┬───────────┘
-           │ REST API
-           ▼
-┌──────────────────────┐
-│   Java Backend API   │
-└──────────┬───────────┘
-           │ SQL Queries
-           ▼
-┌──────────────────────┐
-│    SQL Database      │
-└──────────────────────┘
+                 🎮 Player
+                     │
+                     ▼
+        ┌─────────────────────────┐
+        │    React Frontend       │
+        └───────────┬─────────────┘
+                    │
+                REST API
+                    │
+                    ▼
+        ┌─────────────────────────┐
+        │     Java Backend        │
+        └───────────┬─────────────┘
+                    │
+                 SQL Queries
+                    │
+                    ▼
+        ┌─────────────────────────┐
+        │      SQL Database       │
+        └─────────────────────────┘
 ```
 
 ---
 
-# 📸 Application Preview
+# 📸 Game Preview
 
-## 🎮 Game Interface
+## 🎮 Home Screen
 
-<img width="1920" height="1020" alt="Game Screen" src="https://github.com/user-attachments/assets/259f9e05-39dc-49f9-b97b-8302ecfecb6e"/>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/259f9e05-39dc-49f9-b97b-8302ecfecb6e" width="90%">
+</p>
 
 ---
 
 ## 🏆 Leaderboard
 
-<img width="1920" height="1020" alt="Leaderboard" src="https://github.com/user-attachments/assets/e6d08bfb-2474-4c73-ad98-216becb649cc"/>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/e6d08bfb-2474-4c73-ad98-216becb649cc" width="90%">
+</p>
 
 ---
 
 ## 🎉 Winning Screen
 
-<img width="1920" height="1020" alt="Winning Screen" src="https://github.com/user-attachments/assets/9223c250-5d3e-42f0-9d83-c462ef271304"/>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/9223c250-5d3e-42f0-9d83-c462ef271304" width="90%">
+</p>
+
+---
+
+# 📂 Project Structure
+
+```text
+Guess-The-Number
+│
+├── frontend
+│   ├── React (Vite)
+│   ├── Components
+│   ├── Assets
+│   └── Pages
+│
+├── backend
+│   ├── Java REST API
+│   ├── Controllers
+│   ├── Services
+│   └── Models
+│
+└── database
+    └── SQL Tables
+```
 
 ---
 
 # 💡 Learning Outcomes
 
-This project strengthened my understanding of:
+✔ Full Stack Development
 
-- Full Stack Application Development
-- RESTful API Design
-- React State Management
-- SQL Database Integration
-- Backend Validation Logic
-- Responsive UI Development
-- Real-Time Timer Implementation
-- Interactive Web Game Design
+✔ REST API Integration
+
+✔ React State Management
+
+✔ SQL CRUD Operations
+
+✔ Responsive UI Design
+
+✔ Backend Validation
+
+✔ Timer Implementation
+
+✔ Game Logic Development
 
 ---
 
-## ⭐ If you found this project interesting, consider giving it a Star!
+# 🌟 Future Improvements
+
+- 🌙 Dark Mode
+- 👥 Multiplayer Mode
+- 🎖 Achievement Badges
+- 📈 Player Statistics Dashboard
+- 🌍 Global Online Leaderboard
+- 🔐 User Authentication
+
+---
+
+<div align="center">
+
+## ⭐ Enjoyed this project?
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
+
+</div>
