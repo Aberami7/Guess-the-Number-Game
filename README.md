@@ -24,7 +24,6 @@ A full-stack number guessing web game built with **React**, a **Java REST API**,
 - [Project Structure](#project-structure)
 - [Preview](#preview)
 - [Learning Outcomes](#learning-outcomes)
-- [Roadmap](#roadmap)
 
 ---
 
@@ -164,21 +163,14 @@ Guess-The-Number/
 
 ## 💡 Learning Outcomes
 
-✅ Full-stack application development &nbsp;&nbsp;•&nbsp;&nbsp; ✅ REST API design and integration &nbsp;&nbsp;•&nbsp;&nbsp; ✅ React state management
-
-✅ SQL CRUD operations &nbsp;&nbsp;•&nbsp;&nbsp; ✅ Backend input validation &nbsp;&nbsp;•&nbsp;&nbsp; ✅ Timer- and event-driven game logic
-
 </div>
 
-<div align="center">
-
-## 🌟 Roadmap
-
-🎖 Achievement badges &nbsp;&nbsp;•&nbsp;&nbsp; 🌙 Dark mode &nbsp;&nbsp;•&nbsp;&nbsp; 👥 Multiplayer mode
-
-📊 Player statistics dashboard &nbsp;&nbsp;•&nbsp;&nbsp; 🌍 Global leaderboard &nbsp;&nbsp;•&nbsp;&nbsp; 🔐 User authentication
-
-</div>
+- ✅ Full-stack application development
+- ✅ REST API design and integration
+- ✅ React state management
+- ✅ SQL CRUD operations
+- ✅ Backend input validation
+- ✅ Timer- and event-driven game logic
 
 ---
 
