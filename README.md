@@ -186,13 +186,13 @@ Game Over
 
 <br><br>
 
-### 🏆 Leaderboard
+### 🏆 Winning Screen
 
 <img src="https://github.com/user-attachments/assets/e6d08bfb-2474-4c73-ad98-216becb649cc" width="90%">
 
 <br><br>
 
-### 🎉 Winning Screen
+### 🎉 Leadboard
 
 <img src="https://github.com/user-attachments/assets/9223c250-5d3e-42f0-9d83-c462ef271304" width="90%">
 
@@ -227,7 +227,6 @@ Guess-The-Number
 
 ---
 
-<div align="center">
 
 # 💡 Learning Outcomes
 
@@ -245,7 +244,7 @@ Guess-The-Number
 
 ✅ Timer & Game Logic
 
-</div>
+
 
 ---
 
